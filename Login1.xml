@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite configfailurepolicy="continue" name="Automation.Test">
+	<parameter name="browser" value="chrome" />	
+	<test name="Test on Chrome">
+
+		<classes>
+			<class name="com.test.cc.testscript.regression.Login">
+				<methods>
+
+					<include name="verifyLoginPage">						
+					</include>
+					
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+

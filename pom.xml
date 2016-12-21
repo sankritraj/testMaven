@@ -21,7 +21,7 @@
           <source>1.8</source>
           <target>1.8</target>
           <suiteXmlFiles>
-          <suiteXmlFile>Login.xml</suiteXmlFile>
+           <suiteXmlFile>xml\test\resources\Login1.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
         

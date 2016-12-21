@@ -16,9 +16,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
-
-
-
 public class BaseClass {
 	private static Logger Log = Logger.getLogger(BaseClass.class.getName());
 	

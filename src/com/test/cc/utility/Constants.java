@@ -39,7 +39,7 @@ public class Constants {
 	public static final String PATH_RECEPIENTS_CSV = Constants.fileSeparator+"testConfig"+Constants.fileSeparator+"mail-recipients.csv";
 
 	/**Path of Chrome Driver**/
-	public static String chromePath = basePath + Constants.fileSeparator+ "driver" + Constants.fileSeparator+ "chromedriver";
+	public static String chromePath = basePath + Constants.fileSeparator+ "driver" + Constants.fileSeparator+ "chromedriver.exe";
 
 	/**Path of FireFox Driver **/
 

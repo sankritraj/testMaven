@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry including="**/*.java" kind="src" output="target/classes" path="src">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/cglib-nodep-3.2.4.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/client-combined-3.0.1-nodeps.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/commons-exec-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/commons-io-2.5.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/commons-lang3-3.4.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/cssparser-0.9.20.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/gson-2.3.1.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/guava-19.0.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/hamcrest-library-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/htmlunit-2.23.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/htmlunit-core-js-2.23.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/httpcore-4.4.4.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/httpmime-4.5.2.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/javax.servlet-api-3.1.0.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/jetty-io-9.2.13.v20150730.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/jetty-util-9.2.13.v20150730.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/jna-4.1.0.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/jna-platform-4.1.0.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/mail.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/neko-htmlunit-2.23.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/netty-3.5.7.Final.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/phantomjsdriver-1.3.0.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/pop3.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/sac-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/selenium-server-standalone-3.0.1.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/serializer-2.7.2.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/smtp.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/websocket-api-9.2.15.v20160210.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/websocket-client-9.2.15.v20160210.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/websocket-common-9.2.15.v20160210.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/xalan-2.7.2.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/xercesImpl-2.11.0.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_workspace/CrossCode/lib/xml-apis-1.4.01.jar"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

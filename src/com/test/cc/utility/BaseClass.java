@@ -37,6 +37,7 @@ public class BaseClass {
 	public static void setUp(String browser)
 	{
 		String OS = System.getProperty("os.name");
+		System.out.println("OS name is "+OS);
 		switch(browser.toLowerCase())
 		{	
 		case "firefox":

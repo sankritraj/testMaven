@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite configfailurepolicy="continue" name="Automation.Test">
-	<parameter name="browser" value="chrome" />	
+	<parameter name="browser" value="phantom"/>	
 	<test name="Test on Chrome">
 
 		<classes>

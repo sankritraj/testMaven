@@ -80,6 +80,8 @@
 			<version>1.1.0</version>
 		</dependency>
 	</dependencies>
+	
+	
 
 	<build>
 		<sourceDirectory>src</sourceDirectory>
@@ -95,6 +97,13 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.19.1</version>
 				<configuration>
+				  <systemProperties>                              
+                            <!--Set properties passed in by the driver binary downloader-->
+                            <phantomjs.binary.path>${phantomjs.binary.path}</phantomjs.binary.path>
+                            <webdriver.chrome.driver>${webdriver.chrome.driver}</webdriver.chrome.driver>
+                            <webdriver.ie.driver>${webdriver.ie.driver}</webdriver.ie.driver>
+                            <webdriver.opera.driver>${webdriver.opera.driver}</webdriver.opera.driver>
+                        </systemProperties>
 					<!-- Suite testng xml file to consider for test execution -->
 					<suiteXmlFiles>
 						<suiteXmlFile>Login1.xml</suiteXmlFile>

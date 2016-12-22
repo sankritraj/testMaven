@@ -42,6 +42,7 @@ public class Constants {
 	public static String chromePath = basePath + Constants.fileSeparator+ "driver" + Constants.fileSeparator+ "chromedriver.exe";
 	
 	public static String phantomjsPath = basePath + Constants.fileSeparator+ "driver" + Constants.fileSeparator+ "phantomjs.exe";
+	public static String phantomjsPathForLinux = basePath + Constants.fileSeparator+ "driver" + Constants.fileSeparator+ "phantomjs";
 
 	/**Path of FireFox Driver **/
 

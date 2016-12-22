@@ -20,7 +20,7 @@ import org.testng.annotations.Parameters;
 
 public class BaseClass {
 	private static Logger Log = Logger.getLogger(BaseClass.class.getName());
-	
+
 	private static String userName;
 	private static String Password;
 
@@ -36,6 +36,7 @@ public class BaseClass {
 	@BeforeClass(alwaysRun=true)		
 	public static void setUp(String browser)
 	{
+		String OS = System.getProperty("os.name");
 		switch(browser.toLowerCase())
 		{	
 		case "firefox":
@@ -65,11 +66,17 @@ public class BaseClass {
 			caps.setCapability("enablePersistentHover", true);
 			driver = new InternetExplorerDriver(caps);
 			break;		
-			
+
 		case "phantom":
-			 DesiredCapabilities DesireCaps = new DesiredCapabilities();
-		        DesireCaps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, Constants.phantomjsPath);
-		        driver=new PhantomJSDriver(DesireCaps);
+			if (OS.startsWith("Windows")) {
+				DesiredCapabilities DesireCaps = new DesiredCapabilities();
+				DesireCaps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, Constants.phantomjsPath);
+				driver=new PhantomJSDriver(DesireCaps);
+			}else if (OS.startsWith("Linux")) {
+				DesiredCapabilities DesireCaps = new DesiredCapabilities();
+				DesireCaps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, Constants.phantomjsPathForLinux);
+				driver=new PhantomJSDriver(DesireCaps);
+			}
 			break;
 		}
 
@@ -92,7 +99,7 @@ public class BaseClass {
 	{
 		if(isRunningAfterMethod)
 		{
-			
+
 		}
 		Logging.endTestCase(result.getMethod().getDescription());
 
@@ -101,7 +108,7 @@ public class BaseClass {
 	@AfterClass(alwaysRun=true)
 
 
-	
+
 
 	@AfterSuite	
 	public static void sendEmail() throws Exception

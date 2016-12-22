@@ -1,4 +1,5 @@
 package com.test.cc.utility;
+import java.io.File;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
@@ -17,6 +18,8 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
+
+import net.anthavio.phanbedder.Phanbedder;
 
 public class BaseClass {
 	private static Logger Log = Logger.getLogger(BaseClass.class.getName());
@@ -74,8 +77,9 @@ public class BaseClass {
 				DesireCaps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, Constants.phantomjsPath);
 				driver=new PhantomJSDriver(DesireCaps);
 			}else if (OS.startsWith("Linux")) {
+				File phantomjs = Phanbedder.unpack();
 				DesiredCapabilities DesireCaps = new DesiredCapabilities();
-				DesireCaps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, Constants.phantomjsPathForLinux);
+				DesireCaps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, phantomjs.getAbsolutePath());
 				driver=new PhantomJSDriver(DesireCaps);
 			}
 			break;

@@ -41,7 +41,7 @@ public class TestListener  extends EmailableReporter implements IReporter, ITest
 			recepient = recepientList.get(i);
 			Log.info("Sending mail to:- "+recepient);
 			try {
-				Email.sendMailNow(recepient,"smtp.gmail.com","jimcorbett.rsystems@gmail.com","california!12","465");
+				Email.sendMailNow(recepient,"smtp.gmail.com","XXXXXX@gmail.comm","XXXXXX","465");
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
